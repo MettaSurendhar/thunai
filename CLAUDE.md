@@ -1,0 +1,11 @@
+@AGENTS.md
+@.thunai/memory/operating-rules.md
+@.thunai/memory/operating-directives.md
+@.thunai/memory/who-owns-what.md
+@.thunai/src/rules/engineering-principles.md
+@.thunai/src/rules/git-governance.md
+@.thunai/src/rules/branch-naming.md
+@.thunai/src/rules/issue-and-pr.md
+@.thunai/src/rules/scope-and-boundaries.md
+@.thunai/src/rules/verification-honesty.md
+@.thunai/src/rules/security-and-privacy.md

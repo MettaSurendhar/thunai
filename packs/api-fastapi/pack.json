@@ -1,0 +1,11 @@
+{
+  "name": "api-fastapi",
+  "description": "Python FastAPI backend: routers, Pydantic v2, SQLAlchemy 2.0 + Alembic, pytest conventions, HTTP API contract design.",
+  "skills": ["fastapi", "python-conventions", "sqlalchemy-alembic", "api-design"],
+  "detect": ["pyproject.toml", "requirements.txt", "package:fastapi"],
+  "stack": "Python, FastAPI",
+  "routing": {
+    "backend": ["python-conventions", "fastapi", "sqlalchemy-alembic"],
+    "cross-cutting": ["api-design"]
+  }
+}

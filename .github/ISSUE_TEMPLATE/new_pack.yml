@@ -1,0 +1,34 @@
+name: New pack proposal
+description: Propose a stack pack (for example Django, Rails, Go)
+labels: [pack]
+body:
+  - type: input
+    id: stack
+    attributes:
+      label: Stack
+      placeholder: Django + DRF
+    validations:
+      required: true
+  - type: textarea
+    id: skills
+    attributes:
+      label: Proposed skills
+      description: One line per skill with its trigger phrases.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and licences
+      description: Is any content copied or adapted from elsewhere? Give URLs and licences.
+    validations:
+      required: true
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: Checklist
+      options:
+        - label: I read .thunai/docs/adding-a-pack.md
+          required: true
+        - label: I will maintain this pack or help find a maintainer
+          required: false

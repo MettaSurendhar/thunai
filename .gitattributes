@@ -1,0 +1,8 @@
+# Skills and generated files are LF so sync.py --check is stable across OSes
+* text=auto
+skills/** text eol=lf
+.thunai/** text eol=lf
+.github/** text eol=lf
+.claude/** text eol=lf
+.opencode/** text eol=lf
+*.py text eol=lf

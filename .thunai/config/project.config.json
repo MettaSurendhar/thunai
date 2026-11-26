@@ -1,0 +1,27 @@
+{
+  "project": "{{PROJECT_NAME}}",
+  "scope": "All modules",
+  "teams": ["core"],
+  "activeTeam": "core",
+  "outOfScope": [],
+  "packs": [],
+  "stack": {},
+  "baseBranch": "main",
+  "branch": {
+    "prefix": "{{BRANCH_PREFIX}}",
+    "types": ["feat", "bug", "enh", "task", "docs", "hotfix"],
+    "requireIssueNumber": true,
+    "maxLength": 100
+  },
+  "commands": {
+    "install": "",
+    "build": "",
+    "test": "",
+    "lint": ""
+  },
+  "docs": {
+    "root": "docs",
+    "teamFolder": "",
+    "shared": []
+  }
+}

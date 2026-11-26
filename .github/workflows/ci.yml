@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: ${{ matrix.os }} / py${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Generated files are in sync
+        run: python .thunai/sync.py --check
+      - name: Git guard tests
+        run: python .thunai/hooks/test_git_guard.py
+      - name: Validate skills, packs and hygiene
+        run: python .thunai/scripts/validate_template.py
+      - name: Init smoke test
+        run: python .thunai/scripts/smoke_init.py

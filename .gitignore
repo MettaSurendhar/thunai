@@ -1,0 +1,7 @@
+# Thunai local-only files
+.thunai/tracking/*
+!.thunai/tracking/EXAMPLE.md
+.thunai/memory/session/
+
+__pycache__/
+*.pyc

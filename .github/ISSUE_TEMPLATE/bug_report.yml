@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in the template, scripts, or generated files is wrong
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands, for example `python init.py --non-interactive ...`.
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: AI tool involved
+      options: [None (scripts only), GitHub Copilot, Claude Code, OpenCode, Other]
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS and Python version
+      placeholder: Windows 11, Python 3.12
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Thunai version or commit
+    validations:
+      required: false
+  - type: textarea
+    id: output
+    attributes:
+      label: Output or logs
+      description: Redact secrets and personal data.
+      render: text
+    validations:
+      required: false

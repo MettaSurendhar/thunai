@@ -1,0 +1,10 @@
+{
+  "name": "web-nextjs",
+  "description": "Next.js App Router + React + TypeScript frontend: components, state, UI quality, Tailwind v4, shadcn, Magic UI, maps.",
+  "skills": ["nextjs", "react-typescript", "frontend-quality", "tailwindcss", "shadcn", "magicui", "mapcn"],
+  "detect": ["next.config.js", "next.config.mjs", "next.config.ts", "package.json:next"],
+  "stack": "Next.js (App Router), React, TypeScript",
+  "routing": {
+    "frontend": ["nextjs", "react-typescript", "frontend-quality"]
+  }
+}

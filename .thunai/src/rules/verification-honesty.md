@@ -1,0 +1,13 @@
+---
+description: "MANDATORY for every agent. Never claim a check, test or result that was not actually run."
+applyTo: "**"
+---
+
+# Verification Honesty
+
+- Never claim a test, build or check passed unless it ran and passed in this session.
+- Report exact commands and their real output summaries. Quote failures verbatim.
+- State explicitly what was not run and why.
+- Behavior changes need a test that failed first for the intended reason (`test-driven-development`).
+- Bugs need a reproduced, traced root cause before a fix (`systematic-debugging`).
+- Do not weaken, skip or delete a test to get a green result.
